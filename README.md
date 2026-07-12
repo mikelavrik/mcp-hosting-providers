@@ -8,6 +8,7 @@ Last verified: **July 12, 2026**
 
 * [Providers by Category](#providers-by-category)
   * [Shared and Managed Web Hosting](#shared-and-managed-web-hosting)
+  * [Bare Metal and Network Infrastructure](#bare-metal-and-network-infrastructure)
   * [App and Edge Hosting](#app-and-edge-hosting)
   * [Cloud Infrastructure](#cloud-infrastructure)
   * [Backend, Database, and Search Hosting](#backend-database-and-search-hosting)
@@ -25,6 +26,13 @@ Last verified: **July 12, 2026**
 |:-------------|:-------------------|:---------|
 | Hostinger | MCP server for Hostinger API with scoped binaries for hosting, VPS, WordPress, domains, DNS, ecommerce, billing, agency hosting, and related Hostinger tools. | [Hostinger API MCP Server](https://github.com/hostinger/api-mcp-server) |
 | InterServer | Official InterServer KB article for its MCP server for AI hosting automation. | [InterServer MCP Server](https://www.interserver.net/tips/kb/interserver-mcp-server-ai-hosting-automation/) |
+
+### Bare Metal and Network Infrastructure
+
+| **PROVIDER** | **WHAT IT OFFERS** | **LINK** |
+|:-------------|:-------------------|:---------|
+| Vultr | MCP server generated from the Vultr OpenAPI spec for provisioning and managing Vultr infrastructure, with category endpoints including `baremetal`, instances, Kubernetes, DNS, storage, load balancers, managed databases, and billing. | [Vultr MCP](https://github.com/vultr/vultr-mcp) |
+| Equinix | Official remote MCP endpoint for Equinix Fabric resources. Current public docs are Fabric-focused; some servers may be private beta. | [Equinix MCP](https://github.com/equinix/mcp) |
 
 ### App and Edge Hosting
 
