@@ -7,6 +7,7 @@ Last verified: **July 12, 2026**
 ## Table of Contents
 
 * [Providers by Category](#providers-by-category)
+  * [Shared and Managed Web Hosting](#shared-and-managed-web-hosting)
   * [App and Edge Hosting](#app-and-edge-hosting)
   * [Cloud Infrastructure](#cloud-infrastructure)
   * [Backend, Database, and Search Hosting](#backend-database-and-search-hosting)
@@ -17,6 +18,12 @@ Last verified: **July 12, 2026**
 * [Contribute](#contribute)
 
 ## Providers by Category
+
+### Shared and Managed Web Hosting
+
+| **PROVIDER** | **WHAT IT OFFERS** | **LINK** |
+|:-------------|:-------------------|:---------|
+| Hostinger | MCP server for Hostinger API with scoped binaries for hosting, VPS, WordPress, domains, DNS, ecommerce, billing, agency hosting, and related Hostinger tools. | [Hostinger API MCP Server](https://github.com/hostinger/api-mcp-server) |
 
 ### App and Edge Hosting
 
@@ -41,6 +48,7 @@ Last verified: **July 12, 2026**
 | Google Cloud | Cloud Run MCP server for deploying apps to Cloud Run, plus Gemini Cloud Assist remote MCP endpoints for cloud operations. | [Cloud Run MCP](https://github.com/GoogleCloudPlatform/cloud-run-mcp) |
 | Oracle Cloud Infrastructure | OCI-focused MCP servers, including OCI Cloud MCP Server and OCI API MCP Server. | [Oracle MCP](https://github.com/oracle/mcp) |
 | IBM Cloud | IBM Cloud MCP servers for cloud automation, logs, registry, events, Kubernetes/OpenShift, monitoring, object storage, serverless, VPC, and PowerVS. | [IBM Cloud MCP](https://ibm-cloud.github.io/mcp/) |
+| IONOS Cloud | Read-only MCP server with tools for Compute Engine, Kubernetes, Object Storage, DNS, Billing, Certificate Manager, and Activity Log. | [IONOS Cloud MCP](https://github.com/ionos-cloud/ionoscloud-mcp) |
 | HashiCorp | Terraform MCP server for Terraform Registry APIs and HCP Terraform / Terraform Enterprise workspaces. | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) |
 
 ### Backend, Database, and Search Hosting
