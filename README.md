@@ -24,6 +24,7 @@ Last verified: **July 12, 2026**
 | **PROVIDER** | **WHAT IT OFFERS** | **LINK** |
 |:-------------|:-------------------|:---------|
 | Hostinger | MCP server for Hostinger API with scoped binaries for hosting, VPS, WordPress, domains, DNS, ecommerce, billing, agency hosting, and related Hostinger tools. | [Hostinger API MCP Server](https://github.com/hostinger/api-mcp-server) |
+| InterServer | Official InterServer KB article for its MCP server for AI hosting automation. | [InterServer MCP Server](https://www.interserver.net/tips/kb/interserver-mcp-server-ai-hosting-automation/) |
 
 ### App and Edge Hosting
 
