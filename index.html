@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MCP Hosting Provider Directory</title>
+    <meta
+      name="description"
+      content="A current, source-linked list of hosting and cloud providers with official or managed MCP servers."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Page navigation">
+        <a class="brand" href="#top" aria-label="MCP Hosting Provider Directory home">
+          <span class="brand-mark" aria-hidden="true">MCP</span>
+          <span>Hosting Providers</span>
+        </a>
+        <div class="nav-actions">
+          <a href="#directory">Directory</a>
+          <a href="#criteria">Criteria</a>
+          <a href="#sources">Sources</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top">
+        <div>
+          <p class="eyebrow">Verified directory</p>
+          <h1>Hosting providers with MCP servers</h1>
+          <p class="lede">
+            A compact list of hosting, cloud, and backend platforms that expose
+            provider-owned Model Context Protocol servers or documented MCP hosting paths.
+          </p>
+        </div>
+        <div class="stats" aria-label="Directory summary">
+          <div>
+            <strong>7</strong>
+            <span>providers listed</span>
+          </div>
+          <div>
+            <strong>7</strong>
+            <span>managed or official servers</span>
+          </div>
+          <div>
+            <strong>Jul 12, 2026</strong>
+            <span>last verified</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Filter providers">
+        <label class="search">
+          <span>Search providers</span>
+          <input id="provider-search" type="search" placeholder="Search by provider, endpoint, or tool..." autocomplete="off">
+        </label>
+        <div class="segmented" role="group" aria-label="Filter by MCP surface">
+          <button class="active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="managed">Managed</button>
+          <button type="button" data-filter="deploy">Deploy hosts</button>
+          <button type="button" data-filter="database">Database</button>
+        </div>
+      </section>
+
+      <section class="directory" id="directory" aria-label="Provider directory">
+        <article class="provider" data-tags="managed deploy app edge serverless" data-name="Vercel">
+          <img src="https://www.google.com/s2/favicons?sz=64&domain=vercel.com" alt="" loading="lazy">
+          <div class="provider-body">
+            <div class="provider-title">
+              <h2>Vercel</h2>
+              <span class="status beta">Beta official server</span>
+            </div>
+            <p>
+              Vercel MCP is a remote OAuth MCP server at <code>https://mcp.vercel.com</code>
+              for documentation search plus project, deployment, and log management.
+            </p>
+            <div class="meta-row">
+              <span>App hosting</span>
+              <span>Remote HTTP</span>
+              <span>OAuth</span>
+            </div>
+            <a class="source-link" href="https://vercel.com/docs/agent-resources/vercel-mcp">Official docs</a>
+          </div>
+        </article>
+
+        <article class="provider" data-tags="managed deploy edge worker serverless" data-name="Cloudflare">
+          <img src="https://www.google.com/s2/favicons?sz=64&domain=cloudflare.com" alt="" loading="lazy">
+          <div class="provider-body">
+            <div class="provider-title">
+              <h2>Cloudflare</h2>
+              <span class="status official">Managed servers</span>
+            </div>
+            <p>
+              Cloudflare documents managed remote MCP servers for account automation
+              and a Workers-based path for deploying remote MCP servers with Streamable HTTP.
+            </p>
+            <div class="meta-row">
+              <span>Edge hosting</span>
+              <span>Workers</span>
+              <span>Portals</span>
+            </div>
+            <a class="source-link" href="https://developers.cloudflare.com/agents/llms.txt">Official docs index</a>
+          </div>
+        </article>
+
+        <article class="provider" data-tags="managed cloud infrastructure aws serverless database" data-name="AWS">
+          <img src="https://www.google.com/s2/favicons?sz=64&domain=aws.amazon.com" alt="" loading="lazy">
+          <div class="provider-body">
+            <div class="provider-title">
+              <h2>AWS</h2>
+              <span class="status official">Managed preview</span>
+            </div>
+            <p>
+              AWS publishes MCP Servers for AWS, including a managed AWS MCP Server
+              in preview and specialized servers for docs, IaC, ECS, EKS, Lambda, and more.
+            </p>
+            <div class="meta-row">
+              <span>Cloud hosting</span>
+              <span>Infrastructure</span>
+              <span>Stdio / HTTP roadmap</span>
+            </div>
+            <a class="source-link" href="https://github.com/awslabs/mcp">Official GitHub repo</a>
+          </div>
+        </article>
+
+        <article class="provider" data-tags="managed cloud infrastructure azure database" data-name="Microsoft Azure">
+          <img src="https://www.google.com/s2/favicons?sz=64&domain=azure.microsoft.com" alt="" loading="lazy">
+          <div class="provider-body">
+            <div class="provider-title">
+              <h2>Microsoft Azure</h2>
+              <span class="status official">Generally available</span>
+            </div>
+            <p>
+              Azure MCP Server 2.0 connects agents to Azure context across 40+
+              Azure services and can be installed through IDE extensions or package managers.
+            </p>
+            <div class="meta-row">
+              <span>Cloud hosting</span>
+              <span>40+ services</span>
+              <span>Local server</span>
+            </div>
+            <a class="source-link" href="https://github.com/microsoft/mcp/blob/main/servers/Azure.Mcp.Server/README.md">Official README</a>
+          </div>
+        </article>
+
+        <article class="provider" data-tags="managed database backend supabase" data-name="Supabase">
+          <img src="https://www.google.com/s2/favicons?sz=64&domain=supabase.com" alt="" loading="lazy">
+          <div class="provider-body">
+            <div class="provider-title">
+              <h2>Supabase</h2>
+              <span class="status official">Official server</span>
+            </div>
+            <p>
+              Supabase provides a hosted MCP server at <code>https://mcp.supabase.com/mcp</code>
+              for project, database, Edge Function, log, advisor, docs, and storage workflows.
+            </p>
+            <div class="meta-row">
+              <span>Backend hosting</span>
+              <span>Database</span>
+              <span>OAuth</span>
+            </div>
+            <a class="source-link" href="https://supabase.com/docs/guides/ai-tools/mcp">Official docs</a>
+          </div>
+        </article>
+
+        <article class="provider" data-tags="managed database postgres neon" data-name="Neon">
+          <img src="https://www.google.com/s2/favicons?sz=64&domain=neon.com" alt="" loading="lazy">
+          <div class="provider-body">
+            <div class="provider-title">
+              <h2>Neon</h2>
+              <span class="status official">Official server</span>
+            </div>
+            <p>
+              Neon MCP Server exposes project, branch, SQL, migration, query tuning,
+              auth, and documentation tools through <code>https://mcp.neon.tech/mcp</code>.
+            </p>
+            <div class="meta-row">
+              <span>Postgres hosting</span>
+              <span>Remote HTTP</span>
+              <span>OAuth or API key</span>
+            </div>
+            <a class="source-link" href="https://neon.com/docs/ai/neon-mcp-server">Official docs</a>
+          </div>
+        </article>
+
+        <article class="provider" data-tags="managed source pages github ci" data-name="GitHub">
+          <img src="https://www.google.com/s2/favicons?sz=64&domain=github.com" alt="" loading="lazy">
+          <div class="provider-body">
+            <div class="provider-title">
+              <h2>GitHub</h2>
+              <span class="status official">Official server</span>
+            </div>
+            <p>
+              GitHub's official MCP Server connects AI tools to repositories, issues,
+              pull requests, Actions, releases, security findings, and workflow data.
+            </p>
+            <div class="meta-row">
+              <span>Code and Pages hosting</span>
+              <span>Remote or Docker</span>
+              <span>OAuth or PAT</span>
+            </div>
+            <a class="source-link" href="https://github.com/github/github-mcp-server">Official GitHub repo</a>
+          </div>
+        </article>
+      </section>
+
+      <p class="empty-state" id="empty-state" hidden>No providers match that filter.</p>
+
+      <section class="info-band" id="criteria">
+        <div>
+          <h2>Inclusion Criteria</h2>
+          <p>
+            Listed providers have a first-party MCP server, a provider-managed endpoint,
+            or first-party documentation for deploying MCP servers on their hosting platform.
+            Community-only servers are intentionally left out.
+          </p>
+        </div>
+        <div>
+          <h2>Security Note</h2>
+          <p>
+            MCP tools can operate with the same privileges as the account that authorizes them.
+            Prefer read-only scopes, development projects, and manual approval for tool calls.
+          </p>
+        </div>
+      </section>
+
+      <section class="sources" id="sources">
+        <h2>Primary Sources</h2>
+        <ul>
+          <li><a href="https://vercel.com/docs/agent-resources/vercel-mcp">Vercel MCP server docs</a></li>
+          <li><a href="https://vercel.com/docs/mcp/deploy-mcp-servers-to-vercel">Vercel deploy MCP servers docs</a></li>
+          <li><a href="https://developers.cloudflare.com/agents/llms.txt">Cloudflare Agents MCP docs index</a></li>
+          <li><a href="https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/">Cloudflare remote MCP server guide</a></li>
+          <li><a href="https://github.com/awslabs/mcp">AWS Labs MCP servers repo</a></li>
+          <li><a href="https://github.com/microsoft/mcp/blob/main/servers/Azure.Mcp.Server/README.md">Azure MCP Server README</a></li>
+          <li><a href="https://supabase.com/docs/guides/ai-tools/mcp">Supabase MCP Server docs</a></li>
+          <li><a href="https://neon.com/docs/ai/neon-mcp-server">Neon MCP Server docs</a></li>
+          <li><a href="https://github.com/github/github-mcp-server">GitHub MCP Server repo</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Last verified July 12, 2026. Built as a static GitHub Pages project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
