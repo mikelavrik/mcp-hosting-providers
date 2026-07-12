@@ -1,16 +1,11 @@
 # MCP Hosting Provider Directory
 
-<p align="center">
-  A source-linked list of hosting, cloud, backend, database, AI, media, container, and code-hosting providers with first-party MCP servers or documented MCP server hosting paths.
-</p>
+A categorized list of hosting, cloud, backend, database, AI, media, container, and code-hosting providers with first-party MCP servers or documented MCP server hosting paths.
 
-<p align="center">
-  Last verified: <b>July 12, 2026</b>
-</p>
+Last verified: **July 12, 2026**
 
 ## Table of Contents
 
-* [Provider List](#provider-list)
 * [Providers by Category](#providers-by-category)
   * [App and Edge Hosting](#app-and-edge-hosting)
   * [Cloud Infrastructure](#cloud-infrastructure)
@@ -19,46 +14,7 @@
   * [Code Hosting](#code-hosting)
 * [Inclusion Rules](#inclusion-rules)
 * [Security Note](#security-note)
-* [Sources](#sources)
 * [Contribute](#contribute)
-
-## Provider List
-
-Do you want to add, remove, or correct a provider? Please create a [new issue](https://github.com/mikelavrik/mcp-hosting-providers/issues).
-
-| **PROVIDER** | **CATEGORY** | **MCP SERVER / ENDPOINT** | **ACCESS / TRANSPORT** | **STATUS** | **SOURCE** |
-|:-------------|:-------------|:--------------------------|:-----------------------|:-----------|:-----------|
-| Vercel | App hosting | `https://mcp.vercel.com` | Remote MCP, OAuth | Official beta | [Docs](https://vercel.com/docs/agent-resources/vercel-mcp) |
-| Netlify | App hosting | `@netlify/mcp` | Local stdio via `npx` | Official | [Repo](https://github.com/netlify/netlify-mcp) |
-| Cloudflare | Edge hosting | Cloudflare managed MCP servers; Workers guides for remote MCP servers | Remote MCP, Workers, Streamable HTTP | Official | [Docs index](https://developers.cloudflare.com/agents/llms.txt) |
-| Heroku | App hosting | Heroku Platform MCP Server | `heroku mcp:start`, `npx`, or Heroku deploy | Official, early development | [Repo](https://github.com/heroku/heroku-mcp-server) |
-| Render | App hosting | Render MCP Server | Local MCP server | Official | [Repo](https://github.com/render-oss/render-mcp-server) |
-| Railway | App hosting | `railway mcp`; `https://mcp.railway.com` | Local stdio or remote HTTP | Official | [Docs](https://docs.railway.com/cli/mcp) |
-| DigitalOcean | Cloud and app hosting | DigitalOcean MCP Integration | Local MCP server with API token | Official labs | [Repo](https://github.com/digitalocean-labs/mcp-digitalocean) |
-| Fly.io | App hosting | FlyMCP | Local stdio wrapper for `flyctl` | Official repo | [Repo](https://github.com/superfly/flymcp) |
-| Koyeb | App hosting | `@koyeb/mcp-server` | Local stdio via npm or `npx` | Official beta pre-release | [Repo](https://github.com/koyeb/mcp-server-koyeb) |
-| AWS | Cloud infrastructure | AWS MCP Servers collection, including managed AWS MCP Server preview | Local and managed-preview server options | Official preview | [Repo](https://github.com/awslabs/mcp) |
-| Microsoft Azure | Cloud infrastructure | Azure MCP Server | Local MCP server for Azure services | Official, generally available | [README](https://github.com/microsoft/mcp/blob/main/servers/Azure.Mcp.Server/README.md) |
-| Google Cloud | Cloud infrastructure and Cloud Run hosting | Cloud Run MCP; Gemini Cloud Assist MCP | Local MCP, Gemini CLI extension, and remote MCP endpoints | Official; Gemini Cloud Assist private preview | [Cloud Run repo](https://github.com/GoogleCloudPlatform/cloud-run-mcp) |
-| Oracle Cloud Infrastructure | Cloud infrastructure | Oracle OCI MCP servers | Local stdio or Streamable HTTP | Official reference / proof-of-concept | [Repo](https://github.com/oracle/mcp) |
-| IBM Cloud | Cloud infrastructure | IBM Cloud MCP Servers | CLI-based and standalone MCP servers | Official | [Docs](https://ibm-cloud.github.io/mcp/) |
-| HashiCorp | Infrastructure as code and HCP Terraform | Terraform MCP Server | Stdio or Streamable HTTP | Official | [Repo](https://github.com/hashicorp/terraform-mcp-server) |
-| Supabase | Backend and database hosting | `https://mcp.supabase.com/mcp` | Hosted remote MCP, OAuth | Official | [Docs](https://supabase.com/docs/guides/ai-tools/mcp) |
-| Neon | Postgres hosting | `https://mcp.neon.tech/mcp` | Remote MCP, OAuth or API key | Official | [Docs](https://neon.com/docs/ai/neon-mcp-server) |
-| MongoDB Atlas | Database hosting | MongoDB MCP Server | Local stdio via `mongodb-mcp-server`; Atlas API credentials | Official | [Repo](https://github.com/mongodb-js/mongodb-mcp-server) |
-| Redis / Redis Cloud | Database hosting | Redis MCP Server | Local stdio via PyPI or Docker | Official | [Repo](https://github.com/redis/mcp-redis) |
-| Upstash | Serverless data platform | `@upstash/mcp-server` | Local stdio via `npx`; email and API key | Official | [Repo](https://github.com/upstash/mcp-server) |
-| PlanetScale | Database hosting | Hosted PlanetScale MCP server; open-source tool implementations | Hosted MCP server plus local development tools | Official | [Repo](https://github.com/planetscale/mcp-server) |
-| DataStax Astra DB | Database hosting | Astra DB MCP Server | Local stdio via `@datastax/astra-db-mcp` | Official | [Repo](https://github.com/datastax/astra-db-mcp) |
-| Elastic | Search and analytics hosting | Elastic Agent Builder MCP endpoint; Elasticsearch MCP Server | Remote endpoint for Elastic 9.2+ / Serverless; Docker server deprecated | Official | [Repo](https://github.com/elastic/mcp-server-elasticsearch) |
-| Pinecone | Vector database / AI data hosting | Pinecone Assistant MCP Server | Docker or local binary | Official | [Repo](https://github.com/pinecone-io/assistant-mcp) |
-| Qdrant | Vector database hosting | Qdrant MCP Server | Local server via `uvx`; URL and API key | Official | [Repo](https://github.com/qdrant/mcp-server-qdrant) |
-| Weaviate | Vector database hosting | Built-in Weaviate MCP server | Built into Weaviate `v1.37.1+` at `/v1/mcp` | Official preview | [Repo](https://github.com/weaviate/mcp-server-weaviate) |
-| Zilliz Cloud | Vector database hosting | Zilliz MCP Server | Local stdio or Streamable HTTP | Official | [Repo](https://github.com/zilliztech/zilliz-mcp-server) |
-| Cloudinary | Media asset hosting | Cloudinary MCP servers | Hosted remote MCP endpoints or local npm/Docker servers | Official | [Repo](https://github.com/cloudinary/mcp-servers) |
-| Hugging Face | AI model and app hosting | `https://huggingface.co/mcp` | Remote MCP, token or login flow | Official | [Repo](https://github.com/huggingface/hf-mcp-server) |
-| Docker Hub | Container registry hosting | Docker Hub MCP Server | Local stdio or HTTP server | Official | [Repo](https://github.com/docker/hub-mcp) |
-| GitHub | Code and Pages hosting | GitHub MCP Server | Remote MCP or Docker, OAuth or PAT | Official | [Repo](https://github.com/github/github-mcp-server) |
 
 ## Providers by Category
 
@@ -132,43 +88,6 @@ Community-only MCP servers are not included unless the provider officially links
 ## Security Note
 
 MCP servers can expose tools with the same privileges as the account that authorizes them. Prefer read-only scopes, development projects, least-privilege tokens, and manual approval for tool calls that change infrastructure, data, billing, or production deployments.
-
-## Sources
-
-* [Vercel MCP server docs](https://vercel.com/docs/agent-resources/vercel-mcp)
-* [Vercel deploy MCP servers docs](https://vercel.com/docs/mcp/deploy-mcp-servers-to-vercel)
-* [Netlify MCP server repo](https://github.com/netlify/netlify-mcp)
-* [Cloudflare Agents MCP docs index](https://developers.cloudflare.com/agents/llms.txt)
-* [Cloudflare remote MCP server guide](https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/)
-* [Heroku MCP server repo](https://github.com/heroku/heroku-mcp-server)
-* [Render MCP server repo](https://github.com/render-oss/render-mcp-server)
-* [Railway MCP docs](https://docs.railway.com/cli/mcp)
-* [DigitalOcean MCP repo](https://github.com/digitalocean-labs/mcp-digitalocean)
-* [FlyMCP repo](https://github.com/superfly/flymcp)
-* [Koyeb MCP server repo](https://github.com/koyeb/mcp-server-koyeb)
-* [AWS Labs MCP servers repo](https://github.com/awslabs/mcp)
-* [Azure MCP Server README](https://github.com/microsoft/mcp/blob/main/servers/Azure.Mcp.Server/README.md)
-* [Google Cloud Run MCP repo](https://github.com/GoogleCloudPlatform/cloud-run-mcp)
-* [Google Gemini Cloud Assist MCP repo](https://github.com/GoogleCloudPlatform/gemini-cloud-assist-mcp)
-* [Oracle MCP repo](https://github.com/oracle/mcp)
-* [IBM Cloud MCP docs](https://ibm-cloud.github.io/mcp/)
-* [HashiCorp Terraform MCP server repo](https://github.com/hashicorp/terraform-mcp-server)
-* [Supabase MCP Server docs](https://supabase.com/docs/guides/ai-tools/mcp)
-* [Neon MCP Server docs](https://neon.com/docs/ai/neon-mcp-server)
-* [MongoDB MCP server repo](https://github.com/mongodb-js/mongodb-mcp-server)
-* [Redis MCP server repo](https://github.com/redis/mcp-redis)
-* [Upstash MCP server repo](https://github.com/upstash/mcp-server)
-* [PlanetScale MCP server repo](https://github.com/planetscale/mcp-server)
-* [DataStax Astra DB MCP repo](https://github.com/datastax/astra-db-mcp)
-* [Elastic Elasticsearch MCP server repo](https://github.com/elastic/mcp-server-elasticsearch)
-* [Pinecone Assistant MCP repo](https://github.com/pinecone-io/assistant-mcp)
-* [Qdrant MCP server repo](https://github.com/qdrant/mcp-server-qdrant)
-* [Weaviate MCP server repo](https://github.com/weaviate/mcp-server-weaviate)
-* [Zilliz MCP server repo](https://github.com/zilliztech/zilliz-mcp-server)
-* [Cloudinary MCP servers repo](https://github.com/cloudinary/mcp-servers)
-* [Hugging Face MCP server repo](https://github.com/huggingface/hf-mcp-server)
-* [Docker Hub MCP server repo](https://github.com/docker/hub-mcp)
-* [GitHub MCP Server repo](https://github.com/github/github-mcp-server)
 
 ## Contribute
 
