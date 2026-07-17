@@ -47,6 +47,7 @@ Last verified: **July 12, 2026**
 | DigitalOcean | MCP integration for managing DigitalOcean resources through the DigitalOcean API. | [DigitalOcean MCP](https://github.com/digitalocean-labs/mcp-digitalocean) |
 | Fly.io | Local MCP server that wraps `flyctl` for Fly.io workflows. | [FlyMCP](https://github.com/superfly/flymcp) |
 | Koyeb | MCP server for managing Koyeb apps, services, deployments, instances, logs, and one-click apps. | [Koyeb MCP Server](https://github.com/koyeb/mcp-server-koyeb) |
+| Zerops | ZCP (Zerops Control Plane): a CLI with an MCP server that gives a coding agent project-scoped tools for managed services, dev server, deploys, logs, and events inside a real Zerops project. Runs locally over `zcli vpn up`, or as a `zcp@1` container service inside the project itself. | [ZCP docs](https://docs.zerops.io/zcp/overview) |
 
 ### Cloud Infrastructure
 
