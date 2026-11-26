@@ -47,6 +47,7 @@ Last verified: **July 12, 2026**
 | DigitalOcean | MCP integration for managing DigitalOcean resources through the DigitalOcean API. | [DigitalOcean MCP](https://github.com/digitalocean-labs/mcp-digitalocean) |
 | Fly.io | Local MCP server that wraps `flyctl` for Fly.io workflows. | [FlyMCP](https://github.com/superfly/flymcp) |
 | Koyeb | MCP server for managing Koyeb apps, services, deployments, instances, logs, and one-click apps. | [Koyeb MCP Server](https://github.com/koyeb/mcp-server-koyeb) |
+| Tofu | Remote MCP server (OAuth) for apps built with AI tools: deploy files or a public GitHub repository, read build and runtime logs, restore an earlier version, connect a domain, and add a managed Postgres database or Google sign-in. Works from coding agents and from Claude and ChatGPT chats. | [Tofu MCP docs](https://trytofu.ai/docs/agent) |
 
 ### Cloud Infrastructure
 
